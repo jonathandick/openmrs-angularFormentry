@@ -295,16 +295,16 @@ jscs:requirePaddingNewLinesBeforeLineComments, requireTrailingComma
             field.data.id = field.key;
 
             _handleValidators(field,
-                question.questionOptions.shownDateOptions ? 
+                question.questionOptions.shownDateOptions ?
                 question.questionOptions.shownDateOptions.validators : [],
                 questionMap);
-                
-           _handleExpressionProperties(field, 
-           question.questionOptions.shownDateOptions ? 
+
+           _handleExpressionProperties(field,
+           question.questionOptions.shownDateOptions ?
                 question.questionOptions.shownDateOptions.required : undefined,
-                 question.questionOptions.shownDateOptions ? 
-                question.questionOptions.shownDateOptions.disable: undefined, 
-           undefined, question.questionOptions.shownDateOptions ? 
+                 question.questionOptions.shownDateOptions ?
+                question.questionOptions.shownDateOptions.disable: undefined,
+           undefined, question.questionOptions.shownDateOptions ?
                 question.questionOptions.shownDateOptions.calculate: undefined);
 
             if (question.questionOptions.shownDateOptions) {
@@ -364,7 +364,7 @@ jscs:requirePaddingNewLinesBeforeLineComments, requireTrailingComma
                     label: _question.label
                 },
                 modelOptions: {
-                    debounce: 1000
+                    debounce: 0
                 }
                 // ,
                 // validation: {

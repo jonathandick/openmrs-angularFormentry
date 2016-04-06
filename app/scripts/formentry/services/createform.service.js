@@ -7,7 +7,7 @@ jscs:requirePaddingNewLinesBeforeLineComments, requireTrailingComma
     'use strict';
 
     angular
-        .module('openmrs.angularFormentry')
+          .module('openmrs.angularFormentry')
         .factory('CreateFormService', CreateFormService);
 
     CreateFormService.$inject = ['$log', 'OpenmrsFieldHandlerService',

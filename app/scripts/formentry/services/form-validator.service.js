@@ -137,7 +137,7 @@ jshint -W106, -W052, -W098, -W003, -W068, -W004, -W033, -W030, -W117, -W116, -W0
                             CurrentLoadedFormService.questionMap);
 
                     var keyValue = {};
-
+                    console.log(referencedQuestions);
                     _.each(referencedQuestions, function (qId) {
                         if (keyValue[qId] === undefined) {
                             var referenceQuestionkey =
@@ -156,7 +156,7 @@ jshint -W106, -W052, -W098, -W003, -W068, -W004, -W033, -W030, -W117, -W116, -W0
                                 keyValue);
 
                     expressionToEvaluate =
-                    service.replaceMyValuePlaceholdersWithActualValue(expressionToEvaluate, val);
+                      service.replaceMyValuePlaceholdersWithActualValue(expressionToEvaluate, val);
                     console.log('Evaluates val', val);
                     console.log('Evaluates model', elementScope);
                     console.log('expressionToEvaluate', expressionToEvaluate);
@@ -386,13 +386,15 @@ jshint -W106, -W052, -W098, -W003, -W068, -W004, -W033, -W030, -W117, -W116, -W0
                     }
                 });
 
+
+
                 var expressionToEvaluate =
                     service.
                         replaceQuestionsPlaceholdersWithValue(schemaValidatorObject.disableWhenExpression ||
                             schemaValidatorObject.hideWhenExpression, keyValue);
 
                 expressionToEvaluate =
-                service.replaceMyValuePlaceholdersWithActualValue(expressionToEvaluate, val);
+                  service.replaceMyValuePlaceholdersWithActualValue(expressionToEvaluate, val);
                 console.log('Evaluates val', val);
                 console.log('Evaluates model', scope);
                 console.log('expressionToEvaluate', expressionToEvaluate);
