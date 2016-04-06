@@ -19,26 +19,11 @@ angular
     'ngTouch',
     'ui.router',
     'ngResource',
+    'openmrs-ngresource.models',
+    'openmrs-ngresource.restServices',
     'openmrs.angularFormentry',
     'ui.ace',
-    'openmrs.RestServices'
+    'app.formDesigner'
   ])
   .config(function($stateProvider) {
-    $stateProvider
-          .state('home', {
-            url: '/',
-            templateUrl: 'views/main.html',
-            controller: 'MainCtrl'
-          })
-        .state('about', {
-          url: '/about',
-          templateUrl: 'views/about.html',
-          controller: 'AboutCtrl'
-        })
-        .state('recursive-test', {
-          url: '/recursive-test',
-          templateUrl: 'views/form-editor.html',
-          controller: 'EditorCtrl'
-        });
-
   });

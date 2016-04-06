@@ -138,7 +138,9 @@ jshint -W106, -W052, -W098, -W003, -W068, -W004, -W033, -W030, -W117, -W116, -W0
 
                     var keyValue = {};
 
+
                     _.each(referencedQuestions, function(qId) {
+
                         if (keyValue[qId] === undefined) {
                             var referenceQuestionkey =
                                 CurrentLoadedFormService.getFieldKeyFromGlobalById(qId);
@@ -396,6 +398,8 @@ jshint -W106, -W052, -W098, -W003, -W068, -W004, -W033, -W030, -W117, -W116, -W0
                     }
                 });
 
+
+
                 var expressionToEvaluate =
                     service.
                         replaceQuestionsPlaceholdersWithValue(schemaValidatorObject.disableWhenExpression ||
@@ -517,7 +521,7 @@ jshint -W106, -W052, -W098, -W003, -W068, -W004, -W033, -W030, -W117, -W116, -W0
                             if (field.formControl) {
                                 field.formControl.$validate();
                             }
-                            
+
                         });
                     }
                     else {
@@ -531,7 +535,7 @@ jshint -W106, -W052, -W098, -W003, -W068, -W004, -W033, -W030, -W117, -W116, -W0
                         if (fields.formControl) {
                             fields.formControl.$validate();
                         }
-                        
+
                     }
 
                 });

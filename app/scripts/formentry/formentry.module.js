@@ -19,7 +19,8 @@ jscs:disable disallowMixedSpacesAndTabs, requireDotNotation, requirePaddingNewLi
           'ui.select',
           'ngSanitize',
           'angularMoment',
-          'kendo.directives'
+          'kendo.directives',
+          'app.formDesigner'
         ])
 
         .run(function(formlyConfig, formlyValidationMessages, formlyApiCheck) {

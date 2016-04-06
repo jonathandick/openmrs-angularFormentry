@@ -362,6 +362,9 @@ jscs:requirePaddingNewLinesBeforeLineComments, requireTrailingComma
                 templateOptions: {
                     type: 'text',
                     label: _question.label
+                },
+                modelOptions: {
+                    debounce: 0
                 }
                 // ,
                 // validation: {
